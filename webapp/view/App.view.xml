@@ -1,0 +1,14 @@
+<!DOCTYPE xml>
+<mvc:View
+	controllerName="object-list.controller.App"
+	displayBlock="true"
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:core="sap.ui.core">
+	
+	<Panel>
+		<content>
+
+		</content>
+	</Panel>
+</mvc:View>

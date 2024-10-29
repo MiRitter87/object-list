@@ -53,13 +53,13 @@
 			},
 			"routes": [{
 				"pattern": "",
-				"name": "startPageRoute",
-				"target": "startPageTarget"
+				"name": "detailsRoute",
+				"target": "detailsTarget"
 			}],
 			"targets": {
-				"startPageTarget": {
-					"viewId": "startPage",
-					"viewName": "navigation.StartPage",
+				"detailsTarget": {
+					"viewId": "details",
+					"viewName": "Details",
 					"viewLevel" : 1
             	}
             }

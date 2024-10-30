@@ -53,13 +53,13 @@
 			},
 			"routes": [{
 				"pattern": "",
-				"name": "detailsRoute",
-				"target": "detailsTarget"
+				"name": "overviewRoute",
+				"target": "overviewTarget"
 			}],
 			"targets": {
-				"detailsTarget": {
-					"viewId": "details",
-					"viewName": "Details",
+				"overviewTarget": {
+					"viewId": "overview",
+					"viewName": "Overview",
 					"viewLevel" : 1
             	}
             }

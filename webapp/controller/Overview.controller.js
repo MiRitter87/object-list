@@ -3,14 +3,12 @@ sap.ui.define([
 ], function (Controller) {
 	"use strict";
 
-	return Controller.extend("object-list.controller.App", {
+	return Controller.extend("object-list.controller.Overview", {
 		/**
 		 * Initializes the controller.
 		 */
 		onInit : function () {
-			var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
 			
-			oRouter.navTo("overviewRoute");
 		}
 	});
 });

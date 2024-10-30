@@ -3,11 +3,22 @@
 	controllerName="object-list.controller.App"
 	displayBlock="true"
 	xmlns="sap.m"
-	xmlns:mvc="sap.ui.core.mvc">
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:tnt="sap.tnt">
 	
-	<Panel>
-		<content>
+	<tnt:ToolPage id="toolPage">
+		<!-- Application header -->
+		<tnt:header>
+			<tnt:ToolHeader>
+				<ToolbarSpacer />
+				<Text text="{i18n>appTitle}"/>
+				<ToolbarSpacer />
+			</tnt:ToolHeader>
+		</tnt:header>
+	
+		<!-- Content area -->
+		<tnt:mainContents>
 			<App id="contentPage"/>
-		</content>
-	</Panel>
+		</tnt:mainContents>
+	</tnt:ToolPage>
 </mvc:View>

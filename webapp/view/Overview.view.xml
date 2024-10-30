@@ -7,7 +7,35 @@
 	
 	<Page title="{i18n>overview.header}">
 		<content>
-			<Text text="Test"/>
+			<Table id="objectTable">
+				<headerToolbar>
+					<OverflowToolbar>
+						<Title text="{i18n>overview.objects}"/>
+					</OverflowToolbar>
+				</headerToolbar>
+				
+				<columns>
+					<Column minScreenWidth="Desktop" demandPopin="true">
+						<Text text="{i18n>object.id}"/>
+					</Column>
+					<Column minScreenWidth="Desktop" demandPopin="true">
+						<Text text="{i18n>object.range}"/>
+					</Column>
+					<Column minScreenWidth="Desktop" demandPopin="true">
+						<Text text="{i18n>object.number1}"/>
+					</Column>
+				</columns>
+				
+				<items>
+					<ColumnListItem>
+						<cells>
+							<ObjectIdentifier text="{objects>id}"/>
+							<Text text="{objects>range}"/>
+							<Text text="{objects>number1}"/>
+						</cells>
+					</ColumnListItem>
+				</items>
+			</Table>
 		</content>
 	</Page>
 </mvc:View>

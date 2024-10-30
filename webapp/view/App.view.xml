@@ -3,12 +3,11 @@
 	controllerName="object-list.controller.App"
 	displayBlock="true"
 	xmlns="sap.m"
-	xmlns:mvc="sap.ui.core.mvc"
-	xmlns:core="sap.ui.core">
+	xmlns:mvc="sap.ui.core.mvc">
 	
 	<Panel>
 		<content>
-
+			<App id="contentPage"/>
 		</content>
 	</Panel>
 </mvc:View>

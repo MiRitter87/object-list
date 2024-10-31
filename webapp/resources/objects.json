@@ -2,18 +2,48 @@
 	"objects": [
 		{
 			"id": 1,
+			"name": "Object 1",
 			"range": "100-150",
-			"number1": "4700"
+			"number1": 4700,
+			"number2": 24,
+			"attribute1": "D",
+			"attribute2": "zinc",
+			"attribute3": "horizontal",
+			"attribute4": "growth",
+			"attribute5": "yellow",
+			"attribute6": "D",
+			"attribute7": "internal",
+			"number3": 3
 		},
 		{
 			"id": 2,
+			"name": "Object 2",
 			"range": "200-300",
-			"number1": "0815"
+			"number1": 815,
+			"number2": 27,
+			"attribute1": "A",
+			"attribute2": "lead",
+			"attribute3": "vertical",
+			"attribute4": "growth",
+			"attribute5": "green",
+			"attribute6": "M",
+			"attribute7": "external",
+			"number3": 6
 		},
 		{
 			"id": 3,
+			"name": "Object 3",
 			"range": "60-90",
-			"number1": "335"
+			"number1": 335,
+			"number2": 25,
+			"attribute1": "C",
+			"attribute2": "copper",
+			"attribute3": "diagonal",
+			"attribute4": "value",
+			"attribute5": "blue",
+			"attribute6": "L",
+			"attribute7": "external",
+			"number3": 8
 		}
 	]
  }

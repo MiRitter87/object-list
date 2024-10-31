@@ -55,11 +55,20 @@
 				"pattern": "",
 				"name": "overviewRoute",
 				"target": "overviewTarget"
+			}, {
+				"pattern": "details/{objectId}",
+				"name": "detailsRoute",
+				"target": "detailsTarget"
 			}],
 			"targets": {
 				"overviewTarget": {
 					"viewId": "overview",
 					"viewName": "Overview",
+					"viewLevel" : 1
+            	},
+            	"detailsTarget": {
+					"viewId": "details",
+					"viewName": "Details",
 					"viewLevel" : 1
             	}
             }

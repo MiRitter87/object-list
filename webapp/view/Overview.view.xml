@@ -18,11 +18,41 @@
 					<Column minScreenWidth="Desktop" demandPopin="true">
 						<Text text="{i18n>object.id}"/>
 					</Column>
+					<Column minScreenWidth="Desktop">
+						<Text text="{i18n>object.name}"/>
+					</Column>
 					<Column minScreenWidth="Desktop" demandPopin="true">
 						<Text text="{i18n>object.range}"/>
 					</Column>
 					<Column minScreenWidth="Desktop" demandPopin="true">
 						<Text text="{i18n>object.number1}"/>
+					</Column>
+					<Column minScreenWidth="Desktop" demandPopin="true">
+						<Text text="{i18n>object.number2}"/>
+					</Column>
+					<Column minScreenWidth="Desktop" demandPopin="true">
+						<Text text="{i18n>object.attribute1}"/>
+					</Column>
+					<Column minScreenWidth="Desktop" demandPopin="true">
+						<Text text="{i18n>object.attribute2}"/>
+					</Column>
+					<Column minScreenWidth="Desktop" demandPopin="true">
+						<Text text="{i18n>object.attribute3}"/>
+					</Column>
+					<Column minScreenWidth="Desktop" demandPopin="true">
+						<Text text="{i18n>object.attribute4}"/>
+					</Column>
+					<Column minScreenWidth="Desktop" demandPopin="true">
+						<Text text="{i18n>object.attribute5}"/>
+					</Column>
+					<Column minScreenWidth="Desktop" demandPopin="true">
+						<Text text="{i18n>object.attribute6}"/>
+					</Column>
+					<Column minScreenWidth="Desktop" demandPopin="true">
+						<Text text="{i18n>object.attribute7}"/>
+					</Column>
+					<Column minScreenWidth="Desktop" demandPopin="true">
+						<Text text="{i18n>object.number3}"/>
 					</Column>
 				</columns>
 				
@@ -30,8 +60,18 @@
 					<ColumnListItem>
 						<cells>
 							<ObjectIdentifier text="{objects>id}"/>
+							<Text text="{objects>name}"/>
 							<Text text="{objects>range}"/>
 							<Text text="{objects>number1}"/>
+							<Text text="{objects>number2}"/>
+							<Text text="{objects>attribute1}"/>
+							<Text text="{objects>attribute2}"/>
+							<Text text="{objects>attribute3}"/>
+							<Text text="{objects>attribute4}"/>
+							<Text text="{objects>attribute5}"/>
+							<Text text="{objects>attribute6}"/>
+							<Text text="{objects>attribute7}"/>
+							<Text text="{objects>number3}"/>
 						</cells>
 					</ColumnListItem>
 				</items>

@@ -3,11 +3,113 @@
 	controllerName="object-list.controller.Details"
 	displayBlock="true"
 	xmlns="sap.m"
-	xmlns:mvc="sap.ui.core.mvc">
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:l="sap.ui.layout"
+	xmlns:f="sap.ui.layout.form"
+	xmlns:core="sap.ui.core">
 	
 	<Page title="{i18n>details.header}">
 		<content>
-
+			<f:Form id="objectForm" editable="false">
+				<f:layout>
+					<f:ResponsiveGridLayout
+						labelSpanXL="3"
+						labelSpanL="3"
+						labelSpanM="3"
+						labelSpanS="12"
+						adjustLabelSpan="false"
+						emptySpanXL="2"
+						emptySpanL="4"
+						emptySpanM="4"
+						emptySpanS="0"
+						columnsXL="3"
+						columnsL="2"
+						columnsM="1"
+						singleContainerFullSize="false" />
+				</f:layout>
+				
+				<f:formContainers>
+					<f:FormContainer title="{i18n>details.titleGeneralData}">
+						<f:FormElement label="{i18n>object.id}">
+							<f:fields>
+								<Text id="idText" text="{selectedObject>/id}"/>
+							</f:fields>
+						</f:FormElement>
+						
+						<f:FormElement label="{i18n>object.name}">
+							<f:fields>
+								<Text id="nameText" text="{selectedObject>/name}"/>
+							</f:fields>
+						</f:FormElement>
+						
+						<f:FormElement label="{i18n>object.range}">
+							<f:fields>
+								<Text id="rangeText" text="{selectedObject>/range}"/>
+							</f:fields>
+						</f:FormElement>
+						
+						<f:FormElement label="{i18n>object.number1}">
+							<f:fields>
+								<Text id="number1Text" text="{selectedObject>/number1}"/>
+							</f:fields>
+						</f:FormElement>
+						
+						<f:FormElement label="{i18n>object.number2}">
+							<f:fields>
+								<Text id="number2Text" text="{selectedObject>/number2}"/>
+							</f:fields>
+						</f:FormElement>
+						
+						<f:FormElement label="{i18n>object.attribute1}">
+							<f:fields>
+								<Text id="attribute1Text" text="{selectedObject>/attribute1}"/>
+							</f:fields>
+						</f:FormElement>
+						
+						<f:FormElement label="{i18n>object.attribute2}">
+							<f:fields>
+								<Text id="attribute2Text" text="{selectedObject>/attribute2}"/>
+							</f:fields>
+						</f:FormElement>
+						
+						<f:FormElement label="{i18n>object.attribute3}">
+							<f:fields>
+								<Text id="attribute3Text" text="{selectedObject>/attribute3}"/>
+							</f:fields>
+						</f:FormElement>
+						
+						<f:FormElement label="{i18n>object.attribute4}">
+							<f:fields>
+								<Text id="attribute4Text" text="{selectedObject>/attribute4}"/>
+							</f:fields>
+						</f:FormElement>
+						
+						<f:FormElement label="{i18n>object.attribute5}">
+							<f:fields>
+								<Text id="attribute5Text" text="{selectedObject>/attribute5}"/>
+							</f:fields>
+						</f:FormElement>
+						
+						<f:FormElement label="{i18n>object.attribute6}">
+							<f:fields>
+								<Text id="attribute6Text" text="{selectedObject>/attribute6}"/>
+							</f:fields>
+						</f:FormElement>
+						
+						<f:FormElement label="{i18n>object.attribute7}">
+							<f:fields>
+								<Text id="attribute7Text" text="{selectedObject>/attribute7}"/>
+							</f:fields>
+						</f:FormElement>
+						
+						<f:FormElement label="{i18n>object.number3}">
+							<f:fields>
+								<Text id="number3Text" text="{selectedObject>/number3}"/>
+							</f:fields>
+						</f:FormElement>
+					</f:FormContainer>
+				</f:formContainers>
+			</f:Form>
 		</content>
 	</Page>
 </mvc:View>

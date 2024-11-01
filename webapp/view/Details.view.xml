@@ -22,7 +22,7 @@
 						emptySpanL="4"
 						emptySpanM="4"
 						emptySpanS="0"
-						columnsXL="3"
+						columnsXL="2"
 						columnsL="2"
 						columnsM="1"
 						singleContainerFullSize="false" />
@@ -105,6 +105,22 @@
 						<f:FormElement label="{i18n>object.number3}">
 							<f:fields>
 								<Text id="number3Text" text="{selectedObject>/number3}"/>
+							</f:fields>
+						</f:FormElement>
+					</f:FormContainer>
+					
+					<f:FormContainer title="{i18n>details.titleObjectImage}">
+						<f:FormElement>
+							<f:fields>						
+								<Image id="objectImage"/>
+							</f:fields>
+						</f:FormElement>
+					</f:FormContainer>
+					
+					<f:FormContainer title="{i18n>details.titleImageGallery}">
+						<f:FormElement>
+							<f:fields>
+								<Carousel id="objectGalleryCarousel"/>
 							</f:fields>
 						</f:FormElement>
 					</f:FormContainer>

@@ -8,6 +8,12 @@
 		"description": "{{appDescription}}",
 		"applicationVersion": {
 	  		"version": "1.0.0"
+		},
+		"dataSources": {
+			"objects_dataSource": {
+				"uri": "resources/objects.json",
+				"type": "JSON"
+			}
 		}
 	},
   	"sap.ui": {
@@ -39,6 +45,10 @@
 		  			"supportedLocales": ["de", "en"],
 		  			"fallbackLocale": "de"
 				}
+	  		},
+	  		"objects": {
+	  			"type": "sap.ui.model.json.JSONModel",
+				"dataSource": "objects_dataSource"
 	  		}
 		},
 		"routing": {

@@ -1,7 +1,8 @@
 sap.ui.define([
 	"sap/ui/core/mvc/Controller",
-	"sap/ui/model/json/JSONModel"
-], function (Controller, JSONModel) {
+	"sap/ui/model/json/JSONModel",
+	"sap/m/Image"
+], function (Controller, JSONModel, Image) {
 	"use strict";
 
 	return Controller.extend("object-list.controller.Details", {
@@ -29,6 +30,7 @@ sap.ui.define([
     		this.getView().setModel(oObjectModel, "selectedObject");
     		
     		this.setImageSource(sObjectId);
+    		this.initializeCarouselWithImages(oObject);
 		},
 		
 		
@@ -54,6 +56,25 @@ sap.ui.define([
 			var sSourcePath = "resources/" + sObjectId + "/main.png";
 			
 			oObjectImage.setSrc(sSourcePath);
+		},
+		
+		
+		/**
+		 * Initializes the carousel with all images of the given object.
+		 */
+		initializeCarouselWithImages : function (oObject) {
+			var oCarousel = this.getView().byId("objectGalleryCarousel");
+			var sImagePath = "";
+			
+			oCarousel.removeAllPages();
+			
+			for (var i = 0; i < oObject.images.length; i++) {
+				var oImage = new Image();
+				
+				sImagePath = "resources/" + oObject.id + "/" + oObject.images[i];
+				oImage.setSrc(sImagePath);
+				oCarousel.addPage(oImage);
+			}
 		}
 	});
 });

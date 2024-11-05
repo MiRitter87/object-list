@@ -120,7 +120,7 @@
 					<f:FormContainer title="{i18n>details.titleImageGallery}">
 						<f:FormElement>
 							<f:fields>
-								<Carousel id="objectGalleryCarousel"/>
+								<Carousel id="objectGalleryCarousel" loop="true"/>
 							</f:fields>
 						</f:FormElement>
 					</f:FormContainer>

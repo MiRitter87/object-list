@@ -20,13 +20,15 @@ sap.ui.define([
 		 */
 		onRouteMatched : function (oEvent) {
 			var oArguments = oEvent.getParameter("arguments");
-    		var iObjectId = oArguments.objectId;
+    		var sObjectId = oArguments.objectId;
     		var oObjectsModel = this.getOwnerComponent().getModel("objects");
-    		var oObject = this.getObjectWithId(Number(iObjectId), oObjectsModel.oData.objects);
+    		var oObject = this.getObjectWithId(Number(sObjectId), oObjectsModel.oData.objects);
     		var oObjectModel = new JSONModel();
     		
     		oObjectModel.setData(oObject);
     		this.getView().setModel(oObjectModel, "selectedObject");
+    		
+    		this.setImageSource(sObjectId);
 		},
 		
 		
@@ -41,6 +43,17 @@ sap.ui.define([
 					return oTempObject;
 				}
 			}
+		},
+		
+		
+		/**
+		 * Sets the source path of the object image.
+		 */
+		setImageSource : function (sObjectId) {
+			var oObjectImage = this.getView().byId("objectImage");
+			var sSourcePath = "resources/" + sObjectId + "/main.png";
+			
+			oObjectImage.setSrc(sSourcePath);
 		}
 	});
 });

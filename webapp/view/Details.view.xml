@@ -112,7 +112,7 @@
 					<f:FormContainer title="{i18n>details.titleObjectImage}">
 						<f:FormElement>
 							<f:fields>						
-								<Image id="objectImage"/>
+								<Image id="objectImage" height="400px"/>
 							</f:fields>
 						</f:FormElement>
 					</f:FormContainer>

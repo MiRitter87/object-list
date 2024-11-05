@@ -13,7 +13,8 @@
 			"attribute5": "yellow",
 			"attribute6": "D",
 			"attribute7": "internal",
-			"number3": 3
+			"number3": 3,
+			"images": ["1.png", "2.png"]
 		},
 		{
 			"id": 2,
@@ -28,7 +29,8 @@
 			"attribute5": "green",
 			"attribute6": "M",
 			"attribute7": "external",
-			"number3": 6
+			"number3": 6,
+			"images": ["1.png", "2.png"]
 		},
 		{
 			"id": 3,
@@ -43,7 +45,8 @@
 			"attribute5": "blue",
 			"attribute6": "L",
 			"attribute7": "external",
-			"number3": 8
+			"number3": 8,
+			"images": []
 		}
 	]
  }

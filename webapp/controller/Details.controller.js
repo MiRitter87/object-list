@@ -10,10 +10,6 @@ sap.ui.define([
 		 */
 		onInit : function () {
 			var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
-			var oObjectsModel = new JSONModel();
-			
-			oObjectsModel.loadData("resources/objects.json");
-			this.getView().setModel(oObjectsModel, "objects");
 			
 			oRouter.getRoute("detailsRoute").attachMatched(this.onRouteMatched, this);
 		},
@@ -25,7 +21,7 @@ sap.ui.define([
 		onRouteMatched : function (oEvent) {
 			var oArguments = oEvent.getParameter("arguments");
     		var iObjectId = oArguments.objectId;
-    		var oObjectsModel = this.getView().getModel("objects");
+    		var oObjectsModel = this.getOwnerComponent().getModel("objects");
     		var oObject = this.getObjectWithId(Number(iObjectId), oObjectsModel.oData.objects);
     		var oObjectModel = new JSONModel();
     		

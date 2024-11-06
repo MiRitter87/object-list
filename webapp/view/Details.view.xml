@@ -116,16 +116,19 @@
 							</f:fields>
 						</f:FormElement>
 					</f:FormContainer>
-					
-					<f:FormContainer title="{i18n>details.titleImageGallery}">
-						<f:FormElement>
-							<f:fields>
-								<Carousel id="objectGalleryCarousel" loop="true"/>
-							</f:fields>
-						</f:FormElement>
-					</f:FormContainer>
 				</f:formContainers>
 			</f:Form>
+			
+			<Panel width="100%" height="900px">
+				<headerToolbar>
+					<OverflowToolbar>
+						<Title text="{i18n>details.titleImageGallery}"/>
+					</OverflowToolbar>
+				</headerToolbar>
+				<content>
+					<Carousel id="objectGalleryCarousel" loop="true"/>
+				</content>
+			</Panel>
 		</content>
 	</Page>
 </mvc:View>

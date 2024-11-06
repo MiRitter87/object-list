@@ -50,13 +50,13 @@
 						
 						<f:FormElement label="{i18n>object.number1}">
 							<f:fields>
-								<Text id="number1Text" text="{selectedObject>/number1}"/>
+								<Text id="number1Text" text="{selectedObject>/number1} kg"/>
 							</f:fields>
 						</f:FormElement>
 						
 						<f:FormElement label="{i18n>object.number2}">
 							<f:fields>
-								<Text id="number2Text" text="{selectedObject>/number2}"/>
+								<Text id="number2Text" text="{selectedObject>/number2} cm"/>
 							</f:fields>
 						</f:FormElement>
 						

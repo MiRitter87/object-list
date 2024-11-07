@@ -23,6 +23,14 @@ sap.ui.define([
 			var iObjectId = oObjectData.id;
 			
 			oRouter.navTo("detailsRoute", {"objectId" : iObjectId});
+		},
+		
+		
+		/**
+		 * Handles pressing of the sort button.
+		 */
+		handleSortButtonPressed : function() {
+			
 		}
 	});
 });

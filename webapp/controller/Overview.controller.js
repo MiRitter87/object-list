@@ -31,6 +31,14 @@ sap.ui.define([
 		 */
 		handleSortButtonPressed : function() {
 			
+		},
+		
+		
+		/**
+		 * Handles confirmation in the sort dialog.
+		 */
+		handleSortButtonPressed : function() {
+			
 		}
 	});
 });

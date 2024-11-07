@@ -1,7 +1,8 @@
 sap.ui.define([
 	"sap/ui/core/mvc/Controller",
-	"sap/ui/core/Fragment"
-], function (Controller, Fragment) {
+	"sap/ui/core/Fragment",
+	"sap/ui/model/Sorter"
+], function (Controller, Fragment, Sorter) {
 	"use strict";
 
 	return Controller.extend("object-list.controller.Overview", {
@@ -38,8 +39,20 @@ sap.ui.define([
 		/**
 		 * Handles confirmation in the sort dialog.
 		 */
-		onSortDialogConfirm : function() {
-			
+		onSortDialogConfirm : function(oEvent) {
+			var oTable = this.byId("objectTable");
+			var	mParams = oEvent.getParameters();
+			var	oBinding = oTable.getBinding("items");
+			var	sPath;
+			var	bDescending;
+			var	aSorters = [];
+
+			sPath = mParams.sortItem.getKey();
+			bDescending = mParams.sortDescending;
+			aSorters.push(new Sorter(sPath, bDescending));
+
+			// apply the selected sort settings
+			oBinding.sort(aSorters);
 		},
 		
 		

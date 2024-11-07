@@ -12,7 +12,7 @@
 					<OverflowToolbar>
 						<Title text="{i18n>overview.objects}"/>
 						<ToolbarSpacer/>
-						<Button	tooltip="{i18n>overview.sort}" icon="sap-icon://sort" press="handleSortButtonPressed"/>
+						<Button	tooltip="{i18n>overview.sort}" icon="sap-icon://sort" press=".onSortButtonPressed"/>
 					</OverflowToolbar>
 				</headerToolbar>
 				

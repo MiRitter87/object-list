@@ -1,6 +1,7 @@
 sap.ui.define([
-	"sap/ui/core/mvc/Controller"
-], function (Controller) {
+	"sap/ui/core/mvc/Controller",
+	"sap/ui/core/Fragment"
+], function (Controller, Fragment) {
 	"use strict";
 
 	return Controller.extend("object-list.controller.Overview", {
@@ -29,16 +30,54 @@ sap.ui.define([
 		/**
 		 * Handles pressing of the sort button.
 		 */
-		handleSortButtonPressed : function() {
-			
+		onSortButtonPressed : function() {
+			this.openFragmentAsPopUp(this, "object-list.view.SortDialog");
 		},
 		
 		
 		/**
 		 * Handles confirmation in the sort dialog.
 		 */
-		handleSortButtonPressed : function() {
+		onSortDialogConfirm : function() {
 			
+		},
+		
+		
+		/**
+		 * Opens the fragment with the given name as PopUp.
+		 */
+		openFragmentAsPopUp : function (oController, sName, callbackFunction) {
+			var oView = oController.getView();
+			var oDialogOfMap;
+			
+			if (!oController.oDialogMap) {				
+				oController.oDialogMap = new Map();
+			}
+				
+			oDialogOfMap = oController.oDialogMap.get(sName);
+			
+			if (oDialogOfMap === undefined) {
+				oDialogOfMap = Fragment.load({
+					id: oView.getId(),
+					name: sName,
+					controller: oController
+				}).then(function (oDialog) {
+					//connect dialog to the root view of this component (models, lifecycle)
+					oView.addDependent(oDialog);
+					return oDialog;
+				});
+				
+				oController.oDialogMap.set(sName, oDialogOfMap);				
+			}
+			
+			oDialogOfMap.then(function(oDialog) {
+				oDialog.open();
+				
+				//This callback function is executed optionally, after the Fragment has been fully initialized and opened.
+				if (callbackFunction !== undefined) {					
+					callbackFunction(oController);
+				}
+			});
 		}
 	});
 });

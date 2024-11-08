@@ -1,8 +1,9 @@
 sap.ui.define([
 	"sap/ui/core/mvc/Controller",
 	"sap/ui/core/Fragment",
-	"sap/ui/model/Sorter"
-], function (Controller, Fragment, Sorter) {
+	"sap/ui/model/Sorter",
+	"sap/ui/model/Filter"
+], function (Controller, Fragment, Sorter, Filter) {
 	"use strict";
 
 	return Controller.extend("object-list.controller.Overview", {
@@ -68,7 +69,23 @@ sap.ui.define([
 		 * Handles confirmation in the filter dialog.
 		 */
 		onFilterDialogConfirm : function(oEvent) {
-			
+			var oTable = this.byId("objectTable");
+			var	mParams = oEvent.getParameters();
+			var	oBinding = oTable.getBinding("items");
+			var	aFilters = [];
+
+			mParams.filterItems.forEach(function(oItem) {
+				var aSplit = oItem.getKey().split("_");
+				var	sPath = aSplit[0];
+				var	sOperator = aSplit[1];
+				var	sValue1 = aSplit[2];
+				var	sValue2 = aSplit[3];
+				var	oFilter = new Filter(sPath, sOperator, sValue1, sValue2);
+				
+				aFilters.push(oFilter);
+			});
+
+			oBinding.filter(aFilters);
 		},
 		
 		

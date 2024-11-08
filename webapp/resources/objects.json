@@ -3,7 +3,7 @@
 		{
 			"id": 1,
 			"name": "Object 1",
-			"range": "100-150",
+			"range": "200-299",
 			"number1": 4700,
 			"number2": 24,
 			"attribute1": "D",
@@ -19,7 +19,7 @@
 		{
 			"id": 2,
 			"name": "Object 2",
-			"range": "200-300",
+			"range": "100-199",
 			"number1": 815,
 			"number2": 27,
 			"attribute1": "A",
@@ -35,7 +35,7 @@
 		{
 			"id": 3,
 			"name": "Object 3",
-			"range": "60-90",
+			"range": "300-399",
 			"number1": 335,
 			"number2": 25,
 			"attribute1": "C",

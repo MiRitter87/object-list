@@ -40,7 +40,7 @@ sap.ui.define([
 		 * Handles pressing of the filter button.
 		 */
 		onFilterButtonPressed : function() {
-			
+			this.openFragmentAsPopUp(this, "object-list.view.FilterDialog");
 		},
 		
 		
@@ -61,6 +61,14 @@ sap.ui.define([
 
 			// apply the selected sort settings
 			oBinding.sort(aSorters);
+		},
+		
+		
+		/**
+		 * Handles confirmation in the filter dialog.
+		 */
+		onFilterDialogConfirm : function(oEvent) {
+			
 		},
 		
 		

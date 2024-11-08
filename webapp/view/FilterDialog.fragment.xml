@@ -1,0 +1,16 @@
+<core:FragmentDefinition
+	xmlns="sap.m"
+	xmlns:core="sap.ui.core">
+	<ViewSettingsDialog
+		confirm="onFilterDialogConfirm">
+		<filterItems>
+			<ViewSettingsFilterItem	text="{i18n>object.range}" key="range" multiSelect="false">
+				<items>
+					<ViewSettingsItem text="{i18n>object.range.one}" key="range_EQ_100-199" />
+					<ViewSettingsItem text="{i18n>object.range.two}" key="range_EQ_200-299" />
+					<ViewSettingsItem text="{i18n>object.range.three}" key="range_EQ_300-399" />
+				</items>
+			</ViewSettingsFilterItem>
+		</filterItems>
+	</ViewSettingsDialog>
+</core:FragmentDefinition>

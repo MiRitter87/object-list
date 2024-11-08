@@ -37,6 +37,14 @@ sap.ui.define([
 		
 		
 		/**
+		 * Handles pressing of the filter button.
+		 */
+		onFilterButtonPressed : function() {
+			
+		},
+		
+		
+		/**
 		 * Handles confirmation in the sort dialog.
 		 */
 		onSortDialogConfirm : function(oEvent) {

@@ -11,6 +11,19 @@
 					<ViewSettingsItem text="{i18n>object.range.three}" key="range_EQ_300-399" />
 				</items>
 			</ViewSettingsFilterItem>
+			
+			<ViewSettingsFilterItem	text="{i18n>object.attribute1}" key="attribute1" multiSelect="false">
+				<items>
+					<ViewSettingsItem text="A" key="attribute1_EQ_A" />
+					<ViewSettingsItem text="B" key="attribute1_EQ_B" />
+					<ViewSettingsItem text="C" key="attribute1_EQ_C" />
+					<ViewSettingsItem text="D" key="attribute1_EQ_D" />
+					<ViewSettingsItem text="E" key="attribute1_EQ_E" />
+					<ViewSettingsItem text="F" key="attribute1_EQ_F" />
+					<ViewSettingsItem text="G" key="attribute1_EQ_G" />
+					<ViewSettingsItem text="H" key="attribute1_EQ_H" />
+				</items>
+			</ViewSettingsFilterItem>
 		</filterItems>
 	</ViewSettingsDialog>
 </core:FragmentDefinition>

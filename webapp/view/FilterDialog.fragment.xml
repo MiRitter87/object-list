@@ -24,6 +24,15 @@
 					<ViewSettingsItem text="H" key="attribute1_EQ_H" />
 				</items>
 			</ViewSettingsFilterItem>
+			
+			<ViewSettingsFilterItem	text="{i18n>object.attribute3}" key="attribute3" multiSelect="false">
+				<items>
+					<ViewSettingsItem text="{i18n>object.attribute3.micro}" key="attribute3_EQ_micro" />
+					<ViewSettingsItem text="{i18n>object.attribute3.mini}" key="attribute3_EQ_mini" />
+					<ViewSettingsItem text="{i18n>object.attribute3.midi}" key="attribute3_EQ_midi" />
+					<ViewSettingsItem text="{i18n>object.attribute3.big}" key="attribute3_EQ_big" />
+				</items>
+			</ViewSettingsFilterItem>
 		</filterItems>
 	</ViewSettingsDialog>
 </core:FragmentDefinition>

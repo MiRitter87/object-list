@@ -1,9 +1,10 @@
 sap.ui.define([
+	"./MainController",
 	"sap/ui/core/mvc/Controller",
 	"sap/ui/core/Fragment",
 	"sap/ui/model/Sorter",
 	"sap/ui/model/Filter"
-], function (Controller, Fragment, Sorter, Filter) {
+], function (MainController, Controller, Fragment, Sorter, Filter) {
 	"use strict";
 
 	return Controller.extend("object-list.controller.Overview", {
@@ -124,6 +125,14 @@ sap.ui.define([
 					callbackFunction(oController);
 				}
 			});
+		},
+		
+		
+		/**
+		 * Formatter of the attribute2 text.
+		 */
+		attribute2TextFormatter : function(sAttribute2) {
+			return MainController.getLocalizedAttribute2Text(sAttribute2, this.getOwnerComponent().getModel("i18n").getResourceBundle());
 		}
 	});
 });

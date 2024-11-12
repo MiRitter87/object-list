@@ -1,8 +1,9 @@
 sap.ui.define([
+	"./MainController",
 	"sap/ui/core/mvc/Controller",
 	"sap/ui/model/json/JSONModel",
 	"sap/m/Image"
-], function (Controller, JSONModel, Image) {
+], function (MainController, Controller, JSONModel, Image) {
 	"use strict";
 
 	return Controller.extend("object-list.controller.Details", {
@@ -75,6 +76,14 @@ sap.ui.define([
 				oImage.setSrc(sImagePath);
 				oCarousel.addPage(oImage);
 			}
+		},
+		
+		
+		/**
+		 * Formatter of the attribute2 text.
+		 */
+		attribute2TextFormatter : function(sAttribute2) {
+			return MainController.getLocalizedAttribute2Text(sAttribute2, this.getOwnerComponent().getModel("i18n").getResourceBundle());
 		}
 	});
 });

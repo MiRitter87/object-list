@@ -68,7 +68,7 @@
 							<Text text="{objects>number1} kg"/>
 							<Text text="{objects>number2} cm"/>
 							<Text text="{objects>attribute1}"/>
-							<Text text="{objects>attribute2}"/>
+							<Text text="{path: 'objects>attribute2', formatter: '.attribute2TextFormatter'}"/>
 							<Text text="{objects>attribute3}"/>
 							<Text text="{objects>attribute4}"/>
 							<Text text="{objects>attribute5}"/>

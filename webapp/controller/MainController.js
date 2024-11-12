@@ -5,7 +5,7 @@ sap.ui.define([
 	
 	return {
 		/**
-		 * Returns the localized text of the given type.
+		 * Returns the localized text of the given attribute2.
 		 */
 		getLocalizedAttribute2Text : function(sAttribute2, oResourceBundle) {
 			if(sAttribute2 === "black") {
@@ -22,5 +22,23 @@ sap.ui.define([
 				return "";
 			}
 		},
+		
+		
+		/**
+		 * Returns the localized text of the given attribute3.
+		 */
+		getLocalizedAttribute3Text : function(sAttribute3, oResourceBundle) {
+			if(sAttribute3 === "micro") {
+				return oResourceBundle.getText("object.attribute3.micro");
+			} else if (sAttribute3 === "mini") {
+				return oResourceBundle.getText("object.attribute3.mini");
+			} else if (sAttribute3 === "midi") {
+				return oResourceBundle.getText("object.attribute3.midi");
+			} else if (sAttribute3 === "big") {
+				return oResourceBundle.getText("object.attribute3.big");
+			} else {
+				return "";
+			}
+		}
 	};
 });

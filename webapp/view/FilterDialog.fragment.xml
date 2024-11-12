@@ -41,6 +41,13 @@
 					<ViewSettingsItem text="{i18n>object.attribute4.large}" key="attribute4_EQ_large" />
 				</items>
 			</ViewSettingsFilterItem>
+			
+			<ViewSettingsFilterItem	text="{i18n>object.attribute6}" key="attribute6" multiSelect="false">
+				<items>
+					<ViewSettingsItem text="{i18n>object.attribute6.horizontal}" key="attribute6_EQ_horizontal" />
+					<ViewSettingsItem text="{i18n>object.attribute6.vertical}" key="attribute6_EQ_vertical" />
+				</items>
+			</ViewSettingsFilterItem>
 		</filterItems>
 	</ViewSettingsDialog>
 </core:FragmentDefinition>

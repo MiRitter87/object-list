@@ -11,7 +11,7 @@
 			"attribute3": "micro",
 			"attribute4": "medium",
 			"attribute5": "yellow",
-			"attribute6": "D",
+			"attribute6": "horizontal",
 			"attribute7": "internal",
 			"number3": 3,
 			"images": ["1.png", "2.png"]
@@ -27,7 +27,7 @@
 			"attribute3": "midi",
 			"attribute4": "large",
 			"attribute5": "green",
-			"attribute6": "M",
+			"attribute6": "horizontal",
 			"attribute7": "external",
 			"number3": 6,
 			"images": ["1.png", "2.png"]
@@ -43,7 +43,7 @@
 			"attribute3": "big",
 			"attribute4": "small",
 			"attribute5": "blue",
-			"attribute6": "L",
+			"attribute6": "vertical",
 			"attribute7": "external",
 			"number3": 8,
 			"images": []

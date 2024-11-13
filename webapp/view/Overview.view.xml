@@ -70,7 +70,7 @@
 							<Text text="{objects>attribute1}"/>
 							<Text text="{path: 'objects>attribute2', formatter: '.attribute2TextFormatter'}"/>
 							<Text text="{path: 'objects>attribute3', formatter: '.attribute3TextFormatter'}"/>
-							<Text text="{objects>attribute4}"/>
+							<Text text="{path: 'objects>attribute4', formatter: '.attribute4TextFormatter'}"/>
 							<Text text="{objects>attribute5}"/>
 							<Text text="{objects>attribute6}"/>
 							<Text text="{objects>attribute7}"/>

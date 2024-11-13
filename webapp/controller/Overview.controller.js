@@ -141,6 +141,14 @@ sap.ui.define([
 		 */
 		attribute3TextFormatter : function(sAttribute3) {
 			return MainController.getLocalizedAttribute3Text(sAttribute3, this.getOwnerComponent().getModel("i18n").getResourceBundle());
+		},
+		
+		
+		/**
+		 * Formatter of the attribute4 text.
+		 */
+		attribute4TextFormatter : function(sAttribute4) {
+			return MainController.getLocalizedAttribute4Text(sAttribute4, this.getOwnerComponent().getModel("i18n").getResourceBundle());
 		}
 	});
 });

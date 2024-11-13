@@ -80,7 +80,7 @@
 						
 						<f:FormElement label="{i18n>object.attribute4}">
 							<f:fields>
-								<Text id="attribute4Text" text="{selectedObject>/attribute4}"/>
+								<Text id="attribute4Text" text="{path: 'selectedObject>/attribute4', formatter: '.attribute4TextFormatter'}"/>
 							</f:fields>
 						</f:FormElement>
 						

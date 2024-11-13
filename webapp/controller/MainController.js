@@ -39,6 +39,22 @@ sap.ui.define([
 			} else {
 				return "";
 			}
+		},
+		
+		
+		/**
+		 * Returns the localized text of the given attribute4.
+		 */
+		getLocalizedAttribute4Text : function(sAttribute4, oResourceBundle) {
+			if(sAttribute4 === "small") {
+				return oResourceBundle.getText("object.attribute4.small");
+			} else if (sAttribute4 === "medium") {
+				return oResourceBundle.getText("object.attribute4.medium");
+			} else if (sAttribute4 === "large") {
+				return oResourceBundle.getText("object.attribute4.large");
+			} else {
+				return "";
+			}
 		}
 	};
 });

@@ -17,6 +17,12 @@
 					</OverflowToolbar>
 				</headerToolbar>
 				
+				<infoToolbar>
+					<OverflowToolbar id="vsdFilterBar" visible="false">
+						<Text id="vsdFilterLabel" />
+					</OverflowToolbar>
+				</infoToolbar>
+				
 				<columns>
 					<Column minScreenWidth="Desktop" demandPopin="true">
 						<Text text="{i18n>object.id}"/>

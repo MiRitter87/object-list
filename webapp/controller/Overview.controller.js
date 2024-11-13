@@ -87,6 +87,10 @@ sap.ui.define([
 			});
 
 			oBinding.filter(aFilters);
+			
+			// update filter bar
+			this.byId("vsdFilterBar").setVisible(aFilters.length > 0);
+			this.byId("vsdFilterLabel").setText(mParams.filterString);
 		},
 		
 		

@@ -86,13 +86,13 @@
 						
 						<f:FormElement label="{i18n>object.attribute5}">
 							<f:fields>
-								<Text id="attribute5Text" text="{selectedObject>/attribute5}"/>
+								<Text id="attribute5Text" text="{path: 'selectedObject>/attribute5', formatter: '.attribute5TextFormatter'}"/>
 							</f:fields>
 						</f:FormElement>
 						
 						<f:FormElement label="{i18n>object.attribute6}">
 							<f:fields>
-								<Text id="attribute6Text" text="{selectedObject>/attribute6}"/>
+								<Text id="attribute6Text" text="{path: 'selectedObject>/attribute6', formatter: '.attribute6TextFormatter'}"/>
 							</f:fields>
 						</f:FormElement>
 						

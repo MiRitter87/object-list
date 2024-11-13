@@ -55,6 +55,36 @@ sap.ui.define([
 			} else {
 				return "";
 			}
+		},
+		
+		
+		/**
+		 * Returns the localized text of the given attribute5.
+		 */
+		getLocalizedAttribute5Text : function(sAttribute5, oResourceBundle) {
+			if(sAttribute5 === "small") {
+				return oResourceBundle.getText("object.attribute5.small");
+			} else if (sAttribute5 === "medium") {
+				return oResourceBundle.getText("object.attribute5.medium");
+			} else if (sAttribute5 === "large") {
+				return oResourceBundle.getText("object.attribute5.large");
+			} else {
+				return "";
+			}
+		},
+		
+		
+		/**
+		 * Returns the localized text of the given attribute6.
+		 */
+		getLocalizedAttribute6Text : function(sAttribute6, oResourceBundle) {
+			if(sAttribute6 === "horizontal") {
+				return oResourceBundle.getText("object.attribute6.horizontal");
+			} else if (sAttribute6 === "vertical") {
+				return oResourceBundle.getText("object.attribute6.vertical");
+			} else {
+				return "";
+			}
 		}
 	};
 });

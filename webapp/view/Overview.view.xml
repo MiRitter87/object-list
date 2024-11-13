@@ -71,8 +71,8 @@
 							<Text text="{path: 'objects>attribute2', formatter: '.attribute2TextFormatter'}"/>
 							<Text text="{path: 'objects>attribute3', formatter: '.attribute3TextFormatter'}"/>
 							<Text text="{path: 'objects>attribute4', formatter: '.attribute4TextFormatter'}"/>
-							<Text text="{objects>attribute5}"/>
-							<Text text="{objects>attribute6}"/>
+							<Text text="{path: 'objects>attribute5', formatter: '.attribute5TextFormatter'}"/>
+							<Text text="{path: 'objects>attribute6', formatter: '.attribute6TextFormatter'}"/>
 							<Text text="{objects>attribute7}"/>
 							<Text text="{objects>number3}"/>
 						</cells>

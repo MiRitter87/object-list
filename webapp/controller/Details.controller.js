@@ -74,6 +74,7 @@ sap.ui.define([
 				
 				sImagePath = "resources/" + oObject.id + "/" + oObject.images[i];
 				oImage.setSrc(sImagePath);
+				oImage.setHeight("100%");
 				oCarousel.addPage(oImage);
 			}
 		},
